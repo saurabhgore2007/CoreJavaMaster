@@ -2,7 +2,7 @@ package Day2;
 
 import java.util.Scanner;
 
-// Program to print Fibonacci series using do–while.
+/*Program to print Fibonacci series using do–while.*/
 
 public class Program7 {
 

@@ -2,7 +2,7 @@ package Day2;
 
 import java.util.Scanner;
 
-// Program to find the largest of 3 numbers using if–else.
+/* Program to find the largest of 3 numbers using if–else.*/
 
 public class Program1 {
 

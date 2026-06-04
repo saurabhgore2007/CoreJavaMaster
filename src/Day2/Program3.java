@@ -2,7 +2,7 @@ package Day2;
 
 import java.util.Scanner;
 
-// Input a  number and display whether it is Odd or Even  
+/*Input a  number and display whether it is Odd or Even.*/  
 public class Program3 {
 
 	public static void main(String[] args) {

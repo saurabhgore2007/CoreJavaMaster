@@ -2,7 +2,7 @@ package Day2;
 
 import java.util.Scanner;
 
-// Input an alphabet and check whether it is vowel or consonant 
+/*Input an alphabet and check whether it is vowel or consonant.*/ 
 
 public class Program4 {
 

@@ -2,7 +2,7 @@ package Day2;
 
 import java.util.Scanner;
 
-// Program to calculate factorial using while.
+/*Program to calculate factorial using while.*/
 
 public class Program6 {
 

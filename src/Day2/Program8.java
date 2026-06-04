@@ -2,7 +2,7 @@ package Day2;
 
 import java.util.Scanner;
 
-// Program to create a simple calculator using switch Statement
+/*Program to create a simple calculator using switch Statement.*/
 
 public class Program8 {
 

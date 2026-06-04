@@ -2,7 +2,7 @@ package Day2;
 
 import java.util.Scanner;
 
-//Program to print a multiplication table (1–10) using for loop.
+/*Program to print a multiplication table (1–10) using for loop.*/
 
 public class Program5 {
 

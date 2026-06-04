@@ -2,7 +2,7 @@ package Day2;
 
 import java.util.Scanner;
 
-// Input price and qty, calculate bill amount with discount of 5.00% if price is greater than or equal to 50 
+/*Input price and qty, calculate bill amount with discount of 5.00% if price is greater than or equal to 50.*/ 
 
 
 public class Program2 {
