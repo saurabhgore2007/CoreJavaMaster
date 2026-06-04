@@ -2,7 +2,8 @@ package Day3;
 
 import java.util.Scanner;
 
-/*Define a class BOOK with the following specifications 
+/* Task1
+ * Define a class BOOK with the following specifications 
 Private members of the class BOOK are 
 BOOK NO : integer type 
 BOOKTITLE : 20 characters 
