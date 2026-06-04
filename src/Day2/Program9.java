@@ -30,6 +30,8 @@ public class Program9 {
 			System.out.println("Seller made Loss of Rs." + Math.abs(diff));
 		}
 		else {
-            System.out.println("No Profit, No Loss");		}
+            System.out.println("No Profit, No Loss");
+         }
+		scan.close();
 	}
 }

@@ -21,6 +21,8 @@ public class Program10 {
 		else {
 			System.out.print(year + " is Not a Leap Year");
 		}
+		
+		scan.close();
 	}
 
 }
