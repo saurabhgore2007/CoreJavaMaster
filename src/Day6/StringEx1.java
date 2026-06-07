@@ -25,6 +25,7 @@ public class StringEx1 {
 		}
 		
 		System.out.print("Vowel Count in " + str + " is " +count);
+		scan.close();
 	}
 
 }
