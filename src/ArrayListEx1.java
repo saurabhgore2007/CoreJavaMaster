@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class MainApp {
+public class ArrayListEx1 {
 
         public static void main(String[] args) {
                 ArrayList x = new ArrayList();
