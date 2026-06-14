@@ -27,40 +27,45 @@ public class ArrayListEx1 {
 		
 		
 		//Using Generic
-		ArrayList<Integer> y = new ArrayList<Integer>();
+		ArrayList<Integer> arrObj = new ArrayList<Integer>();
 
-		y.add(194);
-		y.add(170);
-		y.add(15);
+		arrObj.add(194);
+		arrObj.add(170);
+		arrObj.add(15);
 				
-		System.out.println("ArrayList y = " + y);
+		System.out.println("ArrayList y = " + arrObj);
 				
 //		y.remove(new Integer(170));
-		y.remove(Integer.valueOf(170));
-		System.out.println("ArrayList y = " + y);
+		arrObj.remove(Integer.valueOf(170));
+		System.out.println("ArrayList y = " + arrObj);
 				
-		y.add(1,300);
-		System.out.println("Added 300 at 1 to ArrayList y = " + y);
+		arrObj.add(1,300);
+		System.out.println("Added 300 at 1 to ArrayList y = " + arrObj);
 				
-		y.set(0, 2000);
-		System.out.println("Changed Value to 0 index ArrayList y = " + y);
+		arrObj.set(0, 2000);
+		System.out.println("Changed Value to 0 index ArrayList y = " + arrObj);
 				
-		y.addFirst(500);
-		System.out.println("Added First to ArrayList y = " + y);
+		arrObj.addFirst(500);
+		System.out.println("Added First to ArrayList y = " + arrObj);
 		
-		y.addLast(600);
-		System.out.println("Added Last to ArrayList y = " + y);
+		arrObj.addLast(600);
+		System.out.println("Added Last to ArrayList y = " + arrObj);
 
-		System.out.println("Get First ArrayList y = " + y.getFirst());
-		System.out.println("Get Last ArrayList y = " + y.getLast());
+		System.out.println("Get First ArrayList y = " + arrObj.getFirst());
+		System.out.println("Get Last ArrayList y = " + arrObj.getLast());
 		
-		y.removeFirst();
-		System.out.println("Removed First ArrayList y = " + y);
+		arrObj.removeFirst();
+		System.out.println("Removed First ArrayList y = " + arrObj);
 
-		System.out.println("Class of ArrayList y = " + y.getClass());
-		System.out.println("Last index of ArrayList y = " + y.lastIndexOf(y));
+		System.out.println("Class of ArrayList y = " + arrObj.getClass());
+		System.out.println("Last index of ArrayList y = " + arrObj.lastIndexOf(arrObj));
+		System.out.println(arrObj.size());
 
-		System.out.println(y.size());
+		System.out.println("Elements in array List arrObj");
+
+		for (Integer i : arrObj) {
+		      System.out.println(i);
+		    }
 		
 	}
 }
