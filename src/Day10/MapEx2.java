@@ -83,6 +83,7 @@ public class MapEx2 {
 		
 		for(String team:match.keySet())
 		{
+			
 			System.out.println(team);
 			System.out.println("----------------------------------------------------------");
 			for(Players item:match.get(team))
@@ -90,5 +91,22 @@ public class MapEx2 {
 				System.out.println(item);
 			}
 		}
+		
+		/* Print a top 1 player from each team who played highest number of matches  */
+		System.out.println("Top Player From Each Team");
+		System.out.println("--------------------------------");
+
+		for(String team : match.keySet()) {
+			Players topPlayer = null;
+			
+			for(Players p : match.get(team))
+			{
+				if(topPlayer == null || p.innings > topPlayer.innings)
+					topPlayer = p;
+			}
+		    System.out.println(team + " => " + topPlayer);
+
+		}
+		
 	}
 }
