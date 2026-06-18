@@ -23,6 +23,8 @@ public class FunctionEx {
 		
 		System.out.println("Area Of Triangle " + TriangleArea.apply(10.0,10.0));
 
+		BiFunction<Integer, Integer, Integer> add = (a, b) -> a + b;
+		System.out.println("Addition " + add.apply(4,8));
 	}
 
 }
