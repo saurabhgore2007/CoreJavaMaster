@@ -31,6 +31,16 @@ public class LambdaEx3 {
 		System.out.println(dist.test(s2));
 		System.out.println(fail.test(s3));
 
+		Predicate<Integer> even = n -> n%2==0;
+		Predicate<Integer> odd = n -> n%2!=0;
+		Predicate<Integer> greater = n -> n>50;
+		Predicate<Integer> d5 = n -> n%5==0;
+
+		System.out.println("10 is Even : " + even.test(10));
+		System.out.println("7 is Odd : " + odd.test(7));
+		System.out.println("60 > 50 is  : " + greater.test(60));
+		System.out.println("10 Divisible by 5 : " + d5.test(10));
+
 	}
 
 }
