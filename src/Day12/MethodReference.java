@@ -1,6 +1,7 @@
 package Day12;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -56,5 +57,9 @@ public class MethodReference {
 		Function<Double,Double> round = Math::ceil;
 		System.out.println(round.apply(15.51));
 		
+		List<Integer> list = Arrays.asList(10,85,12,52,95,78);
+		//Collections.sort(list,(a,b)->a.compareTo(b));
+		Collections.sort(list,Integer::compareTo);
+		System.out.println(list);
 	}
 }
