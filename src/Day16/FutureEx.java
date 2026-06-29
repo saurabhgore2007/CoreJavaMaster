@@ -4,6 +4,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 
 public class FutureEx {
 
@@ -20,14 +21,15 @@ public class FutureEx {
 		};
 		
 			Future<Integer> future = service.submit(task);
-
-//			future.cancel(true);
+			
 			while(!future.isDone()) {
 			System.out.println("Still Working...");
 			Thread.sleep(500);
-
 			}
-			System.out.println(future.get());
+			
+			future.cancel(true);
+
+			System.out.println(future.get(4, TimeUnit.SECONDS));
 			System.out.println(future.isCancelled());
 			service.shutdown();
 		
