@@ -5,6 +5,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.lang.reflect.Method;
+import java.util.Scanner;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
@@ -34,6 +35,13 @@ public class AnnotationEx4 {
 
 	public static void main(String[] args) throws Exception{
 
+		Scanner scan = new Scanner(System.in);
+		String req = "";
+		boolean found = false;
+		
+		System.out.print("Enter Request :- ");
+		req += scan.next();
+		
 		Class<?> c = HomeController.class;
 		
 		Object obj = c.getConstructor().newInstance();
@@ -43,11 +51,17 @@ public class AnnotationEx4 {
 		for(Method m : methods) {
 			if(m.isAnnotationPresent(Url.class)) {
 				
-				String path = m.getDeclaredAnnotation(Url.class).value();
-				
-				System.out.println("\nURL : " + path);
-				System.out.println("Method : " + m.getName());
+				Url url = m.getAnnotation(Url.class);
+				if(url.value().equals(req)) {
+					found = true;
+					System.out.println("Request : " + url.value());
+					m.invoke(obj);
+					System.out.println("-------------------");
+				}
 			}
+		}
+		if (!found) {
+		    System.out.println("404 - Page Not Found");
 		}
 	}
 
